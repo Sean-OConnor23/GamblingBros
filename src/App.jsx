@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={reactLogo} className="logo react" alt="React logo" />
 
-        <h1>Michael Sucks At NCAA</h1>
+        <h1>Alabama sucks</h1>
       </header>
     </div>
   );
