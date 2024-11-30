@@ -17,9 +17,9 @@ export default function NavigationBar() {
                 <Nav.Link href="../Home">Home</Nav.Link>
                 <Nav.Link href="#link">Link</Nav.Link>
                 <NavDropdown title="Sports" id="basic-nav-dropdown">
-                <NavDropdown.Item href="NFL">NFL</NavDropdown.Item>
-                <NavDropdown.Item href="NBA">NBA</NavDropdown.Item>
-                <NavDropdown.Item href="MLB">MLB</NavDropdown.Item>
+                <NavDropdown.Item href="../NFL">NFL</NavDropdown.Item>
+                <NavDropdown.Item href="../NBA">NBA</NavDropdown.Item>
+                <NavDropdown.Item href="../MLB">MLB</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
                     Separated link
