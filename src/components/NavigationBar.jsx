@@ -8,16 +8,16 @@ export default function NavigationBar() {
     <div>
         <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark">
         <Container>
-            <Navbar.Brand href="#home">Gambling Bros.</Navbar.Brand>
+            <Navbar.Brand href="Home">Gambling Bros.</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="Home">Home</Nav.Link>
                 <Nav.Link href="#link">Link</Nav.Link>
                 <NavDropdown title="Sports" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#NFL">NFL</NavDropdown.Item>
-                <NavDropdown.Item href="#NBA">NBA</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">MLB</NavDropdown.Item>
+                <NavDropdown.Item href="NFL">NFL</NavDropdown.Item>
+                <NavDropdown.Item href="NBA">NBA</NavDropdown.Item>
+                <NavDropdown.Item href="MLB">MLB</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
                     Separated link
