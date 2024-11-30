@@ -10,11 +10,11 @@ export default function NavigationBar() {
     <div>
         <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark">
         <Container>
-            <Navbar.Brand href ="/Home">Gambling Bros.</Navbar.Brand>
+            <Navbar.Brand href ="../Home">Gambling Bros.</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-                <Nav.Link href="/Home">Home</Nav.Link>
+                <Nav.Link href="../Home">Home</Nav.Link>
                 <Nav.Link href="#link">Link</Nav.Link>
                 <NavDropdown title="Sports" id="basic-nav-dropdown">
                 <NavDropdown.Item href="NFL">NFL</NavDropdown.Item>
