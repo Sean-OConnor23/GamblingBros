@@ -1,7 +1,7 @@
 import Body from "./Body.jsx"
 import Footer from "./Footer.jsx"
 
-function Main(){
+export default function Main(){
     return(
         <div>
             <Body></Body>
@@ -9,5 +9,3 @@ function Main(){
         </div>
     );
 }
-
-export default Main;

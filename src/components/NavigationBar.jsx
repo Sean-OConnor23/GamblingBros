@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function NavigationBar() {
+export default function NavigationBar() {
   return (
     <div>
         <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark">
@@ -16,7 +16,7 @@ function NavigationBar() {
                 <Nav.Link href="#link">Link</Nav.Link>
                 <NavDropdown title="Sports" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#NFL">NFL</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">NBA</NavDropdown.Item>
+                <NavDropdown.Item href="#NBA">NBA</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">MLB</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
@@ -30,5 +30,3 @@ function NavigationBar() {
     </div>
   );
 }
-
-export default NavigationBar;
