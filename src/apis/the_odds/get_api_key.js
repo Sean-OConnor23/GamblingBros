@@ -7,7 +7,7 @@ import {
   GetSecretValueCommand,
 } from "@aws-sdk/client-secrets-manager";
 
-const secret_name = "api/the_odds";
+const secret_name = "the_odds";
 
 const client = new SecretsManagerClient({
   region: "us-east-1",
@@ -28,7 +28,7 @@ try {
   throw error;
 }
 
-const secret = response.SecretString;
+const secret = JSON.parse(response.SecretString).the_odds;
 
 // Export secret
 export {secret}
