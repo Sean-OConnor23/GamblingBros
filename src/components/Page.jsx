@@ -1,9 +1,9 @@
 import Main from "./Main.jsx"
 
-export default function Page(){
+export default function Page(props){
     return(
         <div>
-            <Main />
+            <Main sport={props.sport} />
         </div>
     );
 }
