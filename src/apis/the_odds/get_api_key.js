@@ -9,8 +9,14 @@ import {
 
 const secret_name = "the_odds";
 
+const credent = {
+  accessKeyId:"",
+  secretAccessKey:""
+}
+
 const client = new SecretsManagerClient({
   region: "us-east-1",
+  credentials: credent
 });
 
 let response;

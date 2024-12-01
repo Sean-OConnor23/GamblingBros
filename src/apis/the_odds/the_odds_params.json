@@ -1,11 +1,11 @@
 {
-    "sport":[{"":"",
-                "":""}],
-    "regions":[{"USA":"us","USA2":"us2","United_Kingdom":"uk","Australia":"au", "Europe":"eu"}],
-    "markets":[{"Moneyline":"h2h", "Spreads":"spreads", "OverUnder":"totals", "Futures":"outrights","LayOdds":"h2h_lay","FuturesLayOdds":"outrights_lay"}],
+    "sport":{"NFL":"americanfootball_nfl",
+                "NBA":"basketball_nba",
+                "MLB": "baseball_mlb"},
+    "regions":{"USA":"us","USA2":"us2","United_Kingdom":"uk","Australia":"au", "Europe":"eu"},
+    "markets":{"Moneyline":"h2h", "Spreads":"spreads", "OverUnder":"totals", "Futures":"outrights","LayOdds":"h2h_lay","FuturesLayOdds":"outrights_lay"},
     "dateFormat":"",
     "oddsFormat":"",
     "eventIds":"",
     "daysFrom":""
-
 }
