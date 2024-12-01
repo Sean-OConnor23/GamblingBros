@@ -8,7 +8,7 @@ function StripedRowExample(props) {
           <th>#</th>
           <th>{props.name}</th>
           <th>{props.age}</th>
-          <th>Username</th>
+          <th>Tenm</th>
         </tr>
       </thead>
       <tbody>

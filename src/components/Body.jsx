@@ -2,8 +2,12 @@ import Table from "./Table"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import OddsAPI from "../apis/the_odds/the_odds_params.json" with {type: "json"};
+import * as OddsAPITest from "../apis/the_odds/get_sport_data";
 
 export default function Body(props){
+    var test = OddsAPITest.get_odds(props.sport, OddsAPI.regions.USA, OddsAPI.markets.Moneyline)
+    console.log(test)
     return(
         <div><Container fluid>
         <Row>
