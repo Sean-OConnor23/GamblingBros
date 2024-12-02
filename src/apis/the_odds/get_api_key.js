@@ -10,8 +10,8 @@ import {
 const secret_name = "the_odds";
 
 const credent = {
-  accessKeyId:"",
-  secretAccessKey:""
+  accessKeyId:import.meta.env.VITE_ACCESS_KEY,
+  secretAccessKey:import.meta.env.VITE_SECRET_ACCESS_KEY
 }
 
 const client = new SecretsManagerClient({

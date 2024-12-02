@@ -1,6 +1,7 @@
 import Main from "./Main.jsx"
 
 export default function Page(props){
+    
     return(
         <div>
             <Main sport={props.sport} />
