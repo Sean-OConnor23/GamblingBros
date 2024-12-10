@@ -12,14 +12,15 @@ export function get_sports(){
     })
 } 
 
-export function get_odds(sportKey, regions, markets){
+export function get_odds(sportKey, regions, markets, bookmakers){
     var oddsFormat = 'american'
     axios.get(`https://api.the-odds-api.com/v4/sports/${sportKey}/odds`, {
         params: {
             apiKey,
             regions,
             markets,
-            oddsFormat 
+            oddsFormat,
+            bookmakers 
         }
     })
     .then(response => {

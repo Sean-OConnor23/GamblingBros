@@ -5,33 +5,36 @@ function StripedRowExample(props) {
     <Table striped>
       <thead>
         <tr>
-          <th>#</th>
-          <th>{props.name}</th>
-          <th>{props.age}</th>
-          <th>Tenm</th>
+          <th>Home</th>
+          <th>Away</th>
+          <th>Bookmaker</th>
+          <th>Odds</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td colSpan={2}>Larry the Bird</td>
-          <td>@twitter</td>
-        </tr>
+        {props.response.map((result, index) => {
+          return(parseResponse(result));
+        })}
       </tbody>
     </Table>
   );
+}
+
+function parseResponse(response){
+  return(
+  <tr key={response.id}>
+    <td>{response.home_team}</td>
+    <td>{response.away_team}</td>
+    {response.bookmakers.map((result, index) => {
+      return(parseOdds(result));
+    })}
+  </tr>);
+}
+
+function parseOdds(bookmaker){
+  return(<tr>
+    <td>{bookmaker.title}</td>
+    </tr>);
 }
 
 export default StripedRowExample;
