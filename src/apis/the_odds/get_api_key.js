@@ -15,7 +15,8 @@ const credent = {
 }
 
 const client = new SecretsManagerClient({
-  region: "us-east-1"
+  region: "us-east-1",
+  credentials: credent
 });
 
 let response;
