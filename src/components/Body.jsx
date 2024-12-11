@@ -7,8 +7,7 @@ import * as OddsAPITest from "../apis/the_odds/get_sport_data";
 import testResponse from "../apis/the_odds/Test.json" with {type: "json"};
 
 export default function Body(props){
-    //var test = OddsAPITest.get_odds(props.sport, OddsAPI.regions.USA, OddsAPI.markets.Moneyline, OddsAPI.Bookmakers_All)
-
+    //var test = OddsAPITest.get_odds(props.sport, OddsAPI.regions.USA, OddsAPI.markets.Moneyline, OddsAPI.Bookmakers_All);
     return(
         <div><Container fluid>
         <Row>

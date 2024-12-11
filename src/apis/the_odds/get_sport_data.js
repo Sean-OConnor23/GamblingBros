@@ -1,7 +1,8 @@
-import {secret as apiKey} from './get_api_key.js'
 import axios from 'axios'
 
 export function get_sports(){
+
+    var apiKey = import.meta.env.VITE_THE_ODDS;
     axios.get('https://api.the-odds-api.com/v4/sports', {params: {apiKey}})
     .then(response => {
         console.log(response.data)
@@ -14,6 +15,7 @@ export function get_sports(){
 
 export function get_odds(sportKey, regions, markets, bookmakers){
     var oddsFormat = 'american'
+    var apiKey = import.meta.env.VITE_THE_ODDS;
     axios.get(`https://api.the-odds-api.com/v4/sports/${sportKey}/odds`, {
         params: {
             apiKey,
@@ -39,3 +41,5 @@ export function get_odds(sportKey, regions, markets, bookmakers){
         console.log(error.response.data)
     })
 }
+
+get_sports()
