@@ -1,5 +1,8 @@
+import PropTypes from 'prop-types';
+
 import Body from "./Body.jsx"
 import Footer from "./Footer.jsx"
+
 
 export default function Main(props){
     return(
@@ -8,4 +11,8 @@ export default function Main(props){
             <Footer />
         </div>
     );
+}
+
+Main.propTypes = {
+    sport: PropTypes.string.isRequired
 }
