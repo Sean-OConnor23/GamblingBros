@@ -1,5 +1,5 @@
 import Main from "./Main.jsx"
-
+import PropTypes from 'prop-types';
 export default function Page(props){
     
     return(
@@ -7,6 +7,10 @@ export default function Page(props){
             <Main sport={props.sport} />
         </div>
     );
+}
+
+Page.propTypes = {
+    sport: PropTypes.string.isRequired
 }
 
 
