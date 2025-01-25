@@ -1,8 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col'
-import Stack from 'react-bootstrap/Stack';
+import CardGroup from 'react-bootstrap/CardGroup';
 
 export default function SportsbookCards(){
 
@@ -16,32 +14,23 @@ export default function SportsbookCards(){
     var description = {DraftKings : "Bet on all of your favorite sports with America's Top-Rated Sportsbook", 
         FanDuel: "Daily Fantasy Sports and Online U.S Sportsbook & Casino",
         BetMGM: "A market-leading sports betting and gaming entertainment company",
-        ESPNBet: "A brand of American sportsbooks and online sports betting services operated by Penn Entertainment"}
+        ESPNBet: "An online sports betting service operated by Penn Entertainment"}
 
     return(
         <div>
-            <Row>
+            <CardGroup>
                 {Object.keys(sportsbooks).map((brand, index) =>(   
-                    <Col key={index}>
-                    <Card  >
-                        <Card.Img variant="top" src="./DraftKings.svg" />
-                        <Card.Body>
-                            <Stack gap={3}>
-                                <div>
-                                    <Card.Title>{sportsbooks[brand]}</Card.Title>
-                                    <Card.Subtitle className="mb-2 text-muted">{slogan[brand]}</Card.Subtitle>
-                                    <Card.Text> {description[brand]} </Card.Text>
-                                </div>
-                                <div>
-                                    <Button variant="primary" href={urls[brand]}>Visit {brand}</Button>
-                                </div>
-                            </Stack> 
-                        </Card.Body>
-                    </Card>
-                    </Col>
-                    
-                ))}
-            </Row>
+                    <Card key={index}>                               
+                        <svg src="/DraftKings.svg" />                              
+                        <Card.Body>                                               
+                            <Card.Title>{sportsbooks[brand]}</Card.Title>
+                            <Card.Subtitle className="text-muted">{slogan[brand]}</Card.Subtitle>
+                            <Card.Text> {description[brand]} </Card.Text> 
+                            <Button variant="primary bottom" href={urls[brand]}>Visit {brand}</Button>                                                           
+                        </Card.Body>                                 
+                    </Card>                                             
+                    ))}
+            </CardGroup>
         </div>
     );
 }
