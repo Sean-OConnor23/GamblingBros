@@ -1,9 +1,10 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col'
 import Stack from 'react-bootstrap/Stack';
 
-export default function SportsbookCarousel(){
+export default function SportsbookCards(){
 
     var sportsbooks = {DraftKings : "DraftKings", FanDuel: "FanDuel", BetMGM: "BetMGM", ESPNBet: "ESPN Bet"};
     var slogan = {DraftKings : "The Crown Is Yours", FanDuel:"Making Winning Our Tradition", 
@@ -21,21 +22,24 @@ export default function SportsbookCarousel(){
         <div>
             <Row>
                 {Object.keys(sportsbooks).map((brand, index) =>(   
-                    <Card style={{ width: '25%' }} key={index}>
-                    <Card.Img variant="top" src="holder.js/100px180" />
-                    <Card.Body>
-                        <Stack gap={3}>
-                            <div>
-                                <Card.Title>{sportsbooks[brand]}</Card.Title>
-                                <Card.Subtitle className="mb-2 text-muted">{slogan[brand]}</Card.Subtitle>
-                                <Card.Text> {description[brand]} </Card.Text>
-                            </div>
-                            <div>
-                                <Button variant="primary" href={urls[brand]}>Visit {brand}</Button>
-                            </div>
-                        </Stack> 
-                    </Card.Body>
+                    <Col key={index}>
+                    <Card  >
+                        <Card.Img variant="top" src="./DraftKings.svg" />
+                        <Card.Body>
+                            <Stack gap={3}>
+                                <div>
+                                    <Card.Title>{sportsbooks[brand]}</Card.Title>
+                                    <Card.Subtitle className="mb-2 text-muted">{slogan[brand]}</Card.Subtitle>
+                                    <Card.Text> {description[brand]} </Card.Text>
+                                </div>
+                                <div>
+                                    <Button variant="primary" href={urls[brand]}>Visit {brand}</Button>
+                                </div>
+                            </Stack> 
+                        </Card.Body>
                     </Card>
+                    </Col>
+                    
                 ))}
             </Row>
         </div>
