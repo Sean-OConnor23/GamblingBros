@@ -13,5 +13,4 @@ export default function Body(props){
 
 Body.propTypes = {
     sport: PropTypes.string.isRequired
-    
 }
