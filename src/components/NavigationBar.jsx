@@ -2,8 +2,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-//import Link from 'react-router-dom'
-//import MyRoutes from './MyRoutes'
 
 export default function NavigationBar() {
   return (
@@ -15,7 +13,7 @@ export default function NavigationBar() {
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
                 <Nav.Link href="../Home">Home</Nav.Link>
-                <Nav.Link href="#link">Link</Nav.Link>
+                <Nav.Link href="../Stats">Stats</Nav.Link>
                 <NavDropdown title="Sports" id="basic-nav-dropdown">
                 <NavDropdown.Item href="../NFL">NFL</NavDropdown.Item>
                 <NavDropdown.Item href="../NBA">NBA</NavDropdown.Item>

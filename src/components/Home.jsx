@@ -3,15 +3,19 @@ import Row from 'react-bootstrap/Row';
 //import Col from 'react-bootstrap/Col';
 
 import SportsbookCards from "./SportsbookCards"
+import InfoCarousel from "./InfoCarousel"
+
+//Maybe the rss news articles?
 
 export default function Home(){
     return(
-        <div>
-            <Container>
-                <Row>
-                    <SportsbookCards></SportsbookCards>
-                </Row>
-            </Container>
-        </div>
+        <Container fluid>
+            <Row>
+                <InfoCarousel/>
+            </Row>
+            <Row>
+                <SportsbookCards/>
+            </Row>
+        </Container>
     );
 }
