@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-
 import Body from "./Body.jsx"
 import Footer from "./Footer.jsx"
 
