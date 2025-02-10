@@ -5,20 +5,17 @@ import Row from 'react-bootstrap/Row';
 import SportsbookCards from "./SportsbookCards"
 import InfoCarousel from "./InfoCarousel"
 
-//Insert Carousel
 //Maybe the rss news articles?
 
 export default function Home(){
     return(
-        <div>
-            <Container>
-                <Row>
-                    <InfoCarousel>def</InfoCarousel>
-                </Row>
-                <Row>
-                    <SportsbookCards></SportsbookCards>
-                </Row>
-            </Container>
-        </div>
+        <Container fluid>
+            <Row>
+                <InfoCarousel/>
+            </Row>
+            <Row>
+                <SportsbookCards/>
+            </Row>
+        </Container>
     );
 }

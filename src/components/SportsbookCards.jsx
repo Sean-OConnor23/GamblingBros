@@ -1,6 +1,8 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
+import DraftKingsLogo from '../images/sportsbooks/DraftKings.svg'
+import Image from 'react-bootstrap/Image';
 
 export default function SportsbookCards(){
 
@@ -21,7 +23,7 @@ export default function SportsbookCards(){
             <CardGroup>
                 {Object.keys(sportsbooks).map((brand, index) =>(   
                     <Card key={index}>                               
-                        <svg src="/DraftKings.svg" />                              
+                        <Image className="d-block w-100" src={DraftKingsLogo}/>                       
                         <Card.Body>                                               
                             <Card.Title>{sportsbooks[brand]}</Card.Title>
                             <Card.Subtitle className="text-muted">{slogan[brand]}</Card.Subtitle>
